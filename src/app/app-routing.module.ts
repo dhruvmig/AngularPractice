@@ -8,7 +8,8 @@ const routes: Routes = [
   {path:'heroes' , component:HeroesComponent},
   {path:'dashboard' , component:DashboardComponent},
   {path:'heroes/:id' , component:HeroDetailComponent},
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) }
 ];
 
 @NgModule({

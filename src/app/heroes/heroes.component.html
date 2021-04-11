@@ -6,6 +6,7 @@
     
 </div> -->
 <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
 <ul class="heroes">
   <li *ngFor = "let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
       <input placeholder="name" [(ngModel)]="hero.name">
