@@ -1,0 +1,22 @@
+<h1>reactive-forms works!</h1>
+
+
+
+<form [formGroup]="infoForm" (ngSubmit)="onSubmit()">
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <label>Email</label>
+    <input type="text" formControlName="email">
+    <label>Mobile</label>
+    <input type="text" formControlName="mobile">
+    <button></button>
+</form>
+
+<div *ngIf="display">
+    <h3>Name</h3>
+    <p>{{infoForm.controls.name.value}}</p>
+    <h3>Email</h3>
+    <p>{{infoForm.controls.email.value}}</p>
+    <h3>Mobile</h3>
+    <p>{{infoForm.controls.mobile.value}}</p>
+</div>

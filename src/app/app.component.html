@@ -10,5 +10,35 @@
 <!-- <app-heroes></app-heroes> -->
 <router-outlet></router-outlet>
 <app-messages></app-messages>
+<app-reactive-forms></app-reactive-forms>
+<app-template-forms></app-template-forms>
 </div>
+<button (click)="onClick()">
+  Get Observable data(Fork Join)
+</button>
 
+<h3>Merge Map implementation</h3>
+<button (click)="merge()"> Merge</button>
+
+<h3>
+  Distinct untill changed between 1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4
+</h3>
+<button (click)="distinct()">
+  Distinct
+</button>
+
+
+
+<h3>
+  Take operator
+</h3>
+<button (click)="implementTake()">
+  Take
+</button>
+
+<h3>
+  swithc map
+</h3>
+<button (click)="switchmap()">
+  switch
+</button>
